@@ -23,6 +23,12 @@
       },
       "auth": {
         "notesauthapib82f3d7f": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3qbjmak7f6vmk",
+          "type": "manual"
+        }
       }
     }
   }
