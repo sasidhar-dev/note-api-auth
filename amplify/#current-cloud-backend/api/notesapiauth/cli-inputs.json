@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/notes": {
+      "name": "/notes",
+      "lambdaFunction": "notesauthapi55372ed0",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
