@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-notesauthapi-dev-143508-authRole",
+      "UnauthRoleArn": "arn:aws:iam::301838289846:role/amplify-notesauthapi-dev-143508-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::301838289846:role/amplify-notesauthapi-dev-143508-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+      "UnauthRoleName": "amplify-notesauthapi-dev-143508-unauthRole",
+      "StackName": "amplify-notesauthapi-dev-143508",
+      "StackId": "arn:aws:cloudformation:ap-south-1:301838289846:stack/amplify-notesauthapi-dev-143508/09c084c0-b290-11ed-acf1-0a1b56e739f8",
+      "AmplifyAppId": "d3qbjmak7f6vmk"
+    },
+    "categories": {
+      "function": {
+        "notesauthapi55372ed0": {
+          "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+          "s3Key": "amplify-builds/notesauthapi55372ed0-36345530753656544a78-build.zip"
+        }
+      },
+      "api": {
+        "notesapiauth": {}
+      },
+      "auth": {
+        "notesauthapib82f3d7f": {}
+      }
+    }
+  }
+}
