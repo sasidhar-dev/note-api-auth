@@ -12,92 +12,59 @@
       "AmplifyAppId": "d3qbjmak7f6vmk"
     }
   },
-  "function": {
-    "notesauthapi55372ed0": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "lastBuildTimeStamp": "2023-02-22T09:56:44.602Z",
-      "lastBuildType": "PROD",
-      "lastPackageTimeStamp": "2023-02-22T09:56:44.664Z",
-      "distZipFilename": "notesauthapi55372ed0-36345530753656544a78-build.zip",
-      "s3Bucket": {
-        "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
-        "s3Key": "amplify-builds/notesauthapi55372ed0-36345530753656544a78-build.zip"
-      },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/notesauthapi55372ed0-cloudformation-template.json",
-        "logicalId": "functionnotesauthapi55372ed0"
-      },
-      "lastPushTimeStamp": "2023-02-22T10:21:44.474Z",
-      "output": {
-        "LambdaExecutionRoleArn": "arn:aws:iam::301838289846:role/notesauthapiLambdaRolef26aeb03-dev",
-        "Region": "ap-south-1",
-        "Arn": "arn:aws:lambda:ap-south-1:301838289846:function:notesauthapi55372ed0-dev",
-        "Name": "notesauthapi55372ed0-dev",
-        "LambdaExecutionRole": "notesauthapiLambdaRolef26aeb03-dev"
-      },
-      "lastPushDirHash": "hFWgOWC2d4+eq3OYh2zJUdmbZ3Q="
-    }
-  },
   "api": {
     "notesapiauth": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
-          "category": "function",
-          "resourceName": "notesauthapi55372ed0",
           "attributes": [
             "Name",
             "Arn"
-          ]
+          ],
+          "category": "function",
+          "resourceName": "notesauthapi55372ed0"
         }
       ],
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/api/notesapiauth-cloudformation-template.json",
-        "logicalId": "apinotesapiauth"
-      },
-      "lastPushTimeStamp": "2023-02-22T10:21:44.484Z",
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway",
       "output": {
         "ApiName": "notesapiauth",
         "RootUrl": "https://c5aov23v6j.execute-api.ap-south-1.amazonaws.com/dev",
         "ApiId": "c5aov23v6j"
+      },
+      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/api/notesapiauth-cloudformation-template.json",
+        "logicalId": "apinotesapiauth"
       },
       "lastPushDirHash": "shHwq9Biosl7iE5gjB1WaLjBSJY="
     }
   },
   "auth": {
     "notesauthapib82f3d7f": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
       "customAuth": false,
+      "dependsOn": [],
       "frontendAuthConfig": {
-        "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyMinLength": 8,
-          "passwordPolicyCharacters": []
-        },
         "mfaConfiguration": "OFF",
         "mfaTypes": [
           "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
         ],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/auth/notesauthapib82f3d7f-cloudformation-template.json",
-        "logicalId": "authnotesauthapib82f3d7f"
-      },
-      "lastPushTimeStamp": "2023-02-22T10:21:44.495Z",
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
       "output": {
         "UserPoolId": "ap-south-1_pxZIBxlhq",
         "AppClientIDWeb": "1ssqmtdi4o7v7bf22ukvfgunf5",
@@ -107,20 +74,53 @@
         "IdentityPoolName": "notesauthapib82f3d7f_identitypool_b82f3d7f__dev",
         "UserPoolName": "notesauthapib82f3d7f_userpool_b82f3d7f"
       },
+      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/auth/notesauthapib82f3d7f-cloudformation-template.json",
+        "logicalId": "authnotesauthapib82f3d7f"
+      },
       "lastPushDirHash": "Yxqq4B6RGX4Nn72jBHEeGLhioLw="
+    }
+  },
+  "function": {
+    "notesauthapi55372ed0": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::301838289846:role/notesauthapiLambdaRolef26aeb03-dev",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:301838289846:function:notesauthapi55372ed0-dev",
+        "Name": "notesauthapi55372ed0-dev",
+        "LambdaExecutionRole": "notesauthapiLambdaRolef26aeb03-dev"
+      },
+      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/notesauthapi55372ed0-cloudformation-template.json",
+        "logicalId": "functionnotesauthapi55372ed0"
+      },
+      "lastBuildTimeStamp": "2023-02-22T10:55:53.964Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-02-22T10:55:53.991Z",
+      "distZipFilename": "notesauthapi55372ed0-74785055745a78306358-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+        "s3Key": "amplify-builds/notesauthapi55372ed0-74785055745a78306358-build.zip"
+      },
+      "lastPushDirHash": "6zL2Z5EhNXCSJ2GTlH9EVXwOu0Q="
     }
   },
   "hosting": {
     "amplifyhosting": {
-      "service": "amplifyhosting",
       "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
       "type": "manual",
+      "output": {},
+      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "logicalId": "hostingamplifyhosting"
       },
-      "lastPushTimeStamp": "2023-02-22T10:21:44.973Z",
-      "output": {},
       "lastPushDirHash": "av1OTf6JiolDX5fKmJCnwEWNHQo="
     }
   }
