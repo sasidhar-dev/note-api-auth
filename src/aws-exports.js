@@ -6,19 +6,19 @@ const awsmobile = {
     "aws_cloud_logic_custom": [
         {
             "name": "notesapiauth",
-            "endpoint": "https://c5aov23v6j.execute-api.ap-south-1.amazonaws.com/dev",
+            "endpoint": "https://kn03ddddae.execute-api.ap-south-1.amazonaws.com/test",
             "region": "ap-south-1"
         },
         {
             "name": "testapidemo",
-            "endpoint": "https://ghlrb32ps1.execute-api.ap-south-1.amazonaws.com/dev",
+            "endpoint": "https://burwst55f3.execute-api.ap-south-1.amazonaws.com/test",
             "region": "ap-south-1"
         }
     ],
-    "aws_cognito_identity_pool_id": "ap-south-1:0ac9e266-a393-4788-9fc3-654e2e455667",
+    "aws_cognito_identity_pool_id": "ap-south-1:b4ae2ff6-f72e-4c2b-af27-0f7ac4d1369c",
     "aws_cognito_region": "ap-south-1",
-    "aws_user_pools_id": "ap-south-1_pxZIBxlhq",
-    "aws_user_pools_web_client_id": "1ssqmtdi4o7v7bf22ukvfgunf5",
+    "aws_user_pools_id": "ap-south-1_oZVOwPQwc",
+    "aws_user_pools_web_client_id": "1am8ak9sbabos1gg43297tio40",
     "oauth": {},
     "aws_cognito_username_attributes": [
         "EMAIL"

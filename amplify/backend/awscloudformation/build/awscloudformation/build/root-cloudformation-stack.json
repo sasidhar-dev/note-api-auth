@@ -155,7 +155,7 @@
     "apinotesapiauth": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/api/notesapiauth-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-test-74818-deployment/amplify-cfn-templates/api/notesapiauth-cloudformation-template.json",
         "Parameters": {
           "functionnotesauthapi55372ed0Name": {
             "Fn::GetAtt": [
@@ -169,14 +169,14 @@
               "Outputs.Arn"
             ]
           },
-          "env": "dev"
+          "env": "test"
         }
       }
     },
     "apitestapidemo": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/api/testapidemo-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-test-74818-deployment/amplify-cfn-templates/api/testapidemo-cloudformation-template.json",
         "Parameters": {
           "functiontestapidemoName": {
             "Fn::GetAtt": [
@@ -190,14 +190,14 @@
               "Outputs.Arn"
             ]
           },
-          "env": "dev"
+          "env": "test"
         }
       }
     },
     "authnotesauthapib82f3d7f": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/auth/notesauthapib82f3d7f-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-test-74818-deployment/amplify-cfn-templates/auth/notesauthapib82f3d7f-cloudformation-template.json",
         "Parameters": {
           "identityPoolName": "notesauthapib82f3d7f_identitypool_b82f3d7f",
           "allowUnauthenticatedIdentities": false,
@@ -244,40 +244,40 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
-          "env": "dev"
+          "env": "test"
         }
       }
     },
     "functionnotesauthapi55372ed0": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/notesauthapi55372ed0-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-test-74818-deployment/amplify-cfn-templates/function/notesauthapi55372ed0-cloudformation-template.json",
         "Parameters": {
-          "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+          "deploymentBucketName": "amplify-notesauthapi-test-74818-deployment",
           "s3Key": "amplify-builds/notesauthapi55372ed0-74785055745a78306358-build.zip",
-          "env": "dev"
+          "env": "test"
         }
       }
     },
     "functiontestapidemo": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/testapidemo-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-test-74818-deployment/amplify-cfn-templates/function/testapidemo-cloudformation-template.json",
         "Parameters": {
-          "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+          "deploymentBucketName": "amplify-notesauthapi-test-74818-deployment",
           "s3Key": "amplify-builds/testapidemo-633554576f6645586a65-build.zip",
-          "env": "dev"
+          "env": "test"
         }
       }
     },
     "hostingamplifyhosting": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-test-74818-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "Parameters": {
           "appId": "d3qbjmak7f6vmk",
           "type": "manual",
-          "env": "dev"
+          "env": "test"
         }
       }
     },
