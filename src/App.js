@@ -56,7 +56,7 @@ function App({ signOut }) {
       <h1>Notes App</h1>
       <div>
         <input placeholder="Note content" type="text" value={input} onChange={(e) => setInput(e.target.value)} />
-        <button onClick={() => addNote()}>Add Note</button>
+        <button onClick={() => addNote()}>Add Note +</button>
       </div>
       <br />
       <Button onClick={signOut}>Sign Out</Button>

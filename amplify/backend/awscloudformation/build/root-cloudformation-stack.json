@@ -1,5 +1,5 @@
 {
-  "Description": "Root Stack for AWS Amplify CLI",
+  "Description": "Root Stack for AWS Amplify Console",
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
     "DeploymentBucketName": {
@@ -152,17 +152,6 @@
         }
       }
     },
-    "functionnotesauthapi55372ed0": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/notesauthapi55372ed0-cloudformation-template.json",
-        "Parameters": {
-          "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
-          "s3Key": "amplify-builds/notesauthapi55372ed0-36345530753656544a78-build.zip",
-          "env": "dev"
-        }
-      }
-    },
     "apinotesapiauth": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
@@ -177,6 +166,27 @@
           "functionnotesauthapi55372ed0Arn": {
             "Fn::GetAtt": [
               "functionnotesauthapi55372ed0",
+              "Outputs.Arn"
+            ]
+          },
+          "env": "dev"
+        }
+      }
+    },
+    "apitestapidemo": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/api/testapidemo-cloudformation-template.json",
+        "Parameters": {
+          "functiontestapidemoName": {
+            "Fn::GetAtt": [
+              "functiontestapidemo",
+              "Outputs.Name"
+            ]
+          },
+          "functiontestapidemoArn": {
+            "Fn::GetAtt": [
+              "functiontestapidemo",
               "Outputs.Arn"
             ]
           },
@@ -234,6 +244,28 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
+          "env": "dev"
+        }
+      }
+    },
+    "functionnotesauthapi55372ed0": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/notesauthapi55372ed0-cloudformation-template.json",
+        "Parameters": {
+          "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+          "s3Key": "amplify-builds/notesauthapi55372ed0-74785055745a78306358-build.zip",
+          "env": "dev"
+        }
+      }
+    },
+    "functiontestapidemo": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/testapidemo-cloudformation-template.json",
+        "Parameters": {
+          "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+          "s3Key": "amplify-builds/testapidemo-633554576f6645586a65-build.zip",
           "env": "dev"
         }
       }

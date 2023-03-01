@@ -1,5 +1,5 @@
 {
-  "Description": "{\"createdOn\":\"Windows\",\"createdBy\":\"Amplify\",\"createdWith\":\"10.7.3\",\"stackType\":\"api-API Gateway\",\"metadata\":{}}",
+  "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"AmplifyAdmin\",\"createdWith\":\"10.8.0-rc.016631d6a.0\",\"stackType\":\"api-API Gateway\",\"metadata\":{}}",
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
     "functionnotesauthapi55372ed0Name": {
@@ -368,7 +368,7 @@
         "Name": "notesapiauth"
       }
     },
-    "notesapiauthDefault4XXResponsea50fb076": {
+    "notesapiauthDefault4XXResponse627eff26": {
       "Type": "AWS::ApiGateway::GatewayResponse",
       "Properties": {
         "ResponseType": "DEFAULT_4XX",
@@ -383,7 +383,7 @@
         }
       }
     },
-    "notesapiauthDefault5XXResponsea50fb076": {
+    "notesapiauthDefault5XXResponse627eff26": {
       "Type": "AWS::ApiGateway::GatewayResponse",
       "Properties": {
         "ResponseType": "DEFAULT_5XX",
@@ -398,7 +398,7 @@
         }
       }
     },
-    "DeploymentAPIGWnotesapiauthda80dd3f": {
+    "DeploymentAPIGWnotesapiauth7192a312": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -416,8 +416,8 @@
         }
       },
       "DependsOn": [
-        "notesapiauthDefault4XXResponsea50fb076",
-        "notesapiauthDefault5XXResponsea50fb076"
+        "notesapiauthDefault4XXResponse627eff26",
+        "notesapiauthDefault5XXResponse627eff26"
       ]
     }
   }

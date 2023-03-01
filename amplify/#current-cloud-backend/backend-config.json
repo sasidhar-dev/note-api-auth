@@ -13,6 +13,20 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
+    },
+    "testapidemo": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "testapidemo"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
     }
   },
   "auth": {
@@ -48,6 +62,11 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "testapidemo": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "hosting": {
@@ -71,6 +90,22 @@
         {
           "category": "function",
           "resourceName": "notesauthapi55372ed0"
+        }
+      ]
+    },
+    "AMPLIFY_function_testapidemo_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testapidemo"
+        }
+      ]
+    },
+    "AMPLIFY_function_testapidemo_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testapidemo"
         }
       ]
     },
