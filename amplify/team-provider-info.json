@@ -1,4 +1,42 @@
 {
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-notesauthapi-test-74818-authRole",
+      "UnauthRoleArn": "arn:aws:iam::301838289846:role/amplify-notesauthapi-test-74818-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::301838289846:role/amplify-notesauthapi-test-74818-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-notesauthapi-test-74818-deployment",
+      "UnauthRoleName": "amplify-notesauthapi-test-74818-unauthRole",
+      "StackName": "amplify-notesauthapi-test-74818",
+      "StackId": "arn:aws:cloudformation:ap-south-1:301838289846:stack/amplify-notesauthapi-test-74818/6e7015a0-b805-11ed-8e99-02f369dc696c",
+      "AmplifyAppId": "d3qbjmak7f6vmk"
+    },
+    "categories": {
+      "auth": {
+        "notesauthapib82f3d7f": {}
+      },
+      "function": {
+        "notesauthapi55372ed0": {
+          "deploymentBucketName": "amplify-notesauthapi-test-74818-deployment",
+          "s3Key": "amplify-builds/notesauthapi55372ed0-74785055745a78306358-build.zip"
+        },
+        "testapidemo": {
+          "deploymentBucketName": "amplify-notesauthapi-test-74818-deployment",
+          "s3Key": "amplify-builds/testapidemo-633554576f6645586a65-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3qbjmak7f6vmk",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "notesapiauth": {},
+        "testapidemo": {}
+      }
+    }
+  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-notesauthapi-dev-143508-authRole",
@@ -15,11 +53,16 @@
       "function": {
         "notesauthapi55372ed0": {
           "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
-          "s3Key": "amplify-builds/notesauthapi55372ed0-36345530753656544a78-build.zip"
+          "s3Key": "amplify-builds/notesauthapi55372ed0-74785055745a78306358-build.zip"
+        },
+        "testapidemo": {
+          "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+          "s3Key": "amplify-builds/testapidemo-633554576f6645586a65-build.zip"
         }
       },
       "api": {
-        "notesapiauth": {}
+        "notesapiauth": {},
+        "testapidemo": {}
       },
       "auth": {
         "notesauthapib82f3d7f": {}

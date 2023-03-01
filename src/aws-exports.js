@@ -8,6 +8,11 @@ const awsmobile = {
             "name": "notesapiauth",
             "endpoint": "https://c5aov23v6j.execute-api.ap-south-1.amazonaws.com/dev",
             "region": "ap-south-1"
+        },
+        {
+            "name": "testapidemo",
+            "endpoint": "https://ghlrb32ps1.execute-api.ap-south-1.amazonaws.com/dev",
+            "region": "ap-south-1"
         }
     ],
     "aws_cognito_identity_pool_id": "ap-south-1:0ac9e266-a393-4788-9fc3-654e2e455667",

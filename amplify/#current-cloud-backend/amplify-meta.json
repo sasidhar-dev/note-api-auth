@@ -31,12 +31,36 @@
         "RootUrl": "https://c5aov23v6j.execute-api.ap-south-1.amazonaws.com/dev",
         "ApiId": "c5aov23v6j"
       },
-      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
+      "lastPushTimeStamp": "2023-03-01T08:14:32.237Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/api/notesapiauth-cloudformation-template.json",
         "logicalId": "apinotesapiauth"
+      }
+    },
+    "testapidemo": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "testapidemo"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/api/testapidemo-cloudformation-template.json",
+        "logicalId": "apitestapidemo"
       },
-      "lastPushDirHash": "shHwq9Biosl7iE5gjB1WaLjBSJY="
+      "lastPushTimeStamp": "2023-03-01T08:14:33.072Z",
+      "output": {
+        "ApiName": "testapidemo",
+        "RootUrl": "https://ghlrb32ps1.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "ghlrb32ps1"
+      },
+      "lastPushDirHash": "nsT1SPMBdzjkuP8MASDU8Hu42IE="
     }
   },
   "auth": {
@@ -49,8 +73,8 @@
           "SMS"
         ],
         "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
         },
         "signupAttributes": [
           "EMAIL"
@@ -74,12 +98,11 @@
         "IdentityPoolName": "notesauthapib82f3d7f_identitypool_b82f3d7f__dev",
         "UserPoolName": "notesauthapib82f3d7f_userpool_b82f3d7f"
       },
-      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
+      "lastPushTimeStamp": "2023-03-01T08:14:32.246Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/auth/notesauthapib82f3d7f-cloudformation-template.json",
         "logicalId": "authnotesauthapib82f3d7f"
-      },
-      "lastPushDirHash": "Yxqq4B6RGX4Nn72jBHEeGLhioLw="
+      }
     }
   },
   "function": {
@@ -94,20 +117,46 @@
         "Name": "notesauthapi55372ed0-dev",
         "LambdaExecutionRole": "notesauthapiLambdaRolef26aeb03-dev"
       },
-      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
+      "lastPushTimeStamp": "2023-03-01T08:14:33.072Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/notesauthapi55372ed0-cloudformation-template.json",
         "logicalId": "functionnotesauthapi55372ed0"
       },
-      "lastBuildTimeStamp": "2023-02-22T10:55:53.964Z",
+      "lastBuildTimeStamp": "2023-03-01T08:11:07.998Z",
       "lastBuildType": "PROD",
-      "lastPackageTimeStamp": "2023-02-22T10:55:53.991Z",
+      "lastPackageTimeStamp": "2023-03-01T08:11:08.080Z",
       "distZipFilename": "notesauthapi55372ed0-74785055745a78306358-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
         "s3Key": "amplify-builds/notesauthapi55372ed0-74785055745a78306358-build.zip"
       },
-      "lastPushDirHash": "6zL2Z5EhNXCSJ2GTlH9EVXwOu0Q="
+      "lastPushDirHash": "Uz1GoLj5gQ9mgGHW3OcZ5Reyl/8="
+    },
+    "testapidemo": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-03-01T08:11:07.995Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-03-01T08:11:08.065Z",
+      "distZipFilename": "testapidemo-633554576f6645586a65-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-notesauthapi-dev-143508-deployment",
+        "s3Key": "amplify-builds/testapidemo-633554576f6645586a65-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/function/testapidemo-cloudformation-template.json",
+        "logicalId": "functiontestapidemo"
+      },
+      "lastPushTimeStamp": "2023-03-01T08:14:33.072Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::301838289846:role/notesauthapiLambdaRolee41e211d-dev",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:301838289846:function:testapidemo-dev",
+        "Name": "testapidemo-dev",
+        "LambdaExecutionRole": "notesauthapiLambdaRolee41e211d-dev"
+      },
+      "lastPushDirHash": "Vf1HE5e9mQyLbOSBI1L+p9g0gww="
     }
   },
   "hosting": {
@@ -116,12 +165,12 @@
       "service": "amplifyhosting",
       "type": "manual",
       "output": {},
-      "lastPushTimeStamp": "2023-02-22T10:57:25.662Z",
+      "lastPushTimeStamp": "2023-03-01T08:14:33.072Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-notesauthapi-dev-143508-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "logicalId": "hostingamplifyhosting"
       },
-      "lastPushDirHash": "av1OTf6JiolDX5fKmJCnwEWNHQo="
+      "lastPushDirHash": "XnMttn5smOYIj5VtrBIaHC1wEPY="
     }
   }
 }
